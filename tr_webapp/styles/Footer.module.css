@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 10rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.team_logo {
+    margin: 0;
+    font-size: 60px;
+}
+
+.team_name {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.team_description {
+    font-size: 18px;
+    text-align: center;
+}
+
+.team_contacts {
+    margin-top: 50px;;
+    display: flex;
+    gap: 30px;
+}
+
+.contacts {
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contacts:hover {
+    text-decoration: underline;
+    text-decoration-color: #283D48;
+    text-decoration-thickness: 2px;
+}
