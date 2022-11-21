@@ -16,7 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
-    margin: 20px;
+    margin: 50px;
 }
 
 .github_links {
@@ -25,6 +25,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.github_links:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF;
+    text-decoration-thickness: 2px;
 }
 
 .github_img {
