@@ -6,7 +6,7 @@ const Navbar = ()=> {
         <div className={styles.navbar}>
             <div className={styles.navbar_brand_wrapper}>
                 <Link className={styles.navbar_brand_link} href={'/'}>
-                    <h1 className={styles.navbar_brand}>TR</h1>
+                    <h2 className={styles.navbar_brand}>TR</h2>
                 </Link>
             </div>
             <div>

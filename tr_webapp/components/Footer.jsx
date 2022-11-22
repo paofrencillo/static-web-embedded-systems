@@ -5,12 +5,12 @@ import Link from "next/link";
 const Footer = ()=> {
     return(
         <div className={styles.container}>
-            <h1 className={styles.team_logo}>
+            <h3 className={styles.team_logo}>
                 TR
-            </h1>
-            <h3 className={styles.team_name}>
-                Team Rocket
             </h3>
+            <h5 className={styles.team_name}>
+                Team Rocket
+            </h5>
             <p className={styles.team_description}>
                 Team Rocket offers a simple way for you to have your very own pokemon and be the very best that no one ever was.
                 To catch them is a real test and to train them is your cause. As Team Rocket will catch em all for you to make

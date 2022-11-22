@@ -9,23 +9,24 @@
 
 .team_logo {
     margin: 0;
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .team_name {
-    font-size: 25px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
 .team_description {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 }
 
 .team_contacts {
-    margin-top: 50px;;
+    margin-top: 30px;;
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .contacts {
@@ -33,7 +34,7 @@
     text-align: center;
     color: #000000;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contacts:hover {
