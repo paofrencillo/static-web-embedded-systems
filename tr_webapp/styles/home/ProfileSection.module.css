@@ -2,17 +2,11 @@
     padding: 50px ;
     background-color: #FFFFFF;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-  
-.upper_profiles,
-.lower_profiles {
-    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    margin: 5px auto;
+    align-items: center;
+    padding: 2rem 7rem;
 }
 
 .card {

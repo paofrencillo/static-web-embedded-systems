@@ -4,8 +4,7 @@ import Link from "next/link";
 const ProfileSection = ()=> {
     return(
         <div className={styles.container}>
-            <div className={styles.upper_profiles}>
-                <div className={styles.card}>
+                            <div className={styles.card}>
                     <div className={styles.profiles_img_wrapper}>
                         <img className={styles.profiles_img} src="/images/worker1.png" alt="cef_art_img" />
                     </div>     
@@ -70,9 +69,7 @@ const ProfileSection = ()=> {
                         </Link>
                     </div>
                 </div>
-            </div>
 
-            <div className={styles.lower_profiles}>
                 <div className={styles.card}>
                     <div className={styles.profiles_img_wrapper}>
                         <img className={styles.profiles_img} src="/images/worker4.png" alt="vj_art_img" />
@@ -138,9 +135,7 @@ const ProfileSection = ()=> {
                         </Link>
                     </div> 
                 </div>
-
             </div>
-        </div>
     );
 }
 
