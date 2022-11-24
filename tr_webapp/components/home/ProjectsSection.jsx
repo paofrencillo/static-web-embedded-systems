@@ -9,7 +9,7 @@ const ProjectsSection = ()=> {
             </div>
             <div className={styles.description}>
                 <h1 className={styles.question}>Want to see what we do?</h1>
-                <Link href={'/projects'} target={'_blank'}>
+                <Link href={'/projects'}>
                     <button className={styles.button}>Go to our projects</button>
                 </Link>
 
