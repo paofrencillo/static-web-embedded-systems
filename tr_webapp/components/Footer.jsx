@@ -12,9 +12,10 @@ const Footer = ()=> {
                 Team Rocket
             </h5>
             <p className={styles.team_description}>
-                Team Rocket offers a simple way for you to have your very own pokemon and be the very best that no one ever was.
-                To catch them is a real test and to train them is your cause. As Team Rocket will catch em all for you to make
-                your journey an easy one!
+                Team Rocket is a dedicated team that provide services
+                that exceed the expectation of the clients and users.
+                <br /><br />
+                <strong>Catch 'em all Pokemon!</strong>
             </p>
             <div className={styles.team_contacts}>
                 <Link className={styles.contacts} href={'tel:09090000000'}>
