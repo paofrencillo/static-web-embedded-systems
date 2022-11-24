@@ -14,10 +14,10 @@ const Navbar = ()=> {
                     <Link className={styles.navbar_links} href={'/'}>
                         <li className={styles.navbar_options}>HOME</li>
                     </Link>
-                    <Link className={styles.navbar_links} href={'/projects'} target={'_blank'}>
+                    <Link className={styles.navbar_links} href={'/projects'}>
                         <li className={styles.navbar_options}>PROJECTS</li>
                     </Link>
-                    <Link className={styles.navbar_links} href={'/about'} target={'_blank'}>
+                    <Link className={styles.navbar_links} href={'/about'}>
                         <li className={styles.navbar_options}>ABOUT</li>
                     </Link>     
                 </ul>
