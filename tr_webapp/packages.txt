@@ -1,0 +1,3 @@
+
+npm install next
+npm install python-shell

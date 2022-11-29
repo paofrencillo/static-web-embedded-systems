@@ -5,7 +5,7 @@ const ProjectsSection = ()=> {
     return(
         <div className={styles.container}>
             <div className={styles.img_wrapper}>
-                <img className={styles.projects_img} src="/images/crying_face.jpg" alt="crying image" />
+                <img className={styles.projects_img} src="/images/developer.gif" alt="crying image" />
             </div>
             <div className={styles.description}>
                 <h1 className={styles.question}>Want to see what we do?</h1>
