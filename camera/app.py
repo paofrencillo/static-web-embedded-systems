@@ -29,7 +29,9 @@ def convertToBinaryData(filename):
 # Infinite while loop to treat stack of image as video
 while True:
     # Reading frame(image) from video
-    _, frame = video.read()
+    ret, frame = video.read()
+    if frame is None:
+        exit()
   
     # Initializing motion = 0(no motion)
     motion = 0
@@ -111,7 +113,7 @@ while True:
         
     # Displaying the black and white image in which if
     # intensity difference greater than 110 it will appear white
-    cv2.imshow("Threshold Frame", thresh_frame)
+    # cv2.imshow("Threshold Frame", thresh_frame)
   
     # Displaying color frame with contour of motion of object
     cv2.imshow("Color Frame", frame)

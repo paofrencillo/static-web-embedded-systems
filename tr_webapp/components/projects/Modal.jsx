@@ -26,10 +26,18 @@ const Modal = ({ isVisible, onClose })=> {
                     </button>
                 </div>
                 <div className={styles.modal_content}>
-                    Motion detector is an application using python program.
-                    By using a camera (laptop, usb cam), the program will detect
-                    movement caught in your camera and you can have the option to
-                    save the captured data in the database as BLOB image.
+                    <p className={styles.modal_paragraph}>
+                        Motion detector is an application using python program.
+                        By using a camera (laptop, usb cam), the program will detect
+                        movement caught in your camera and you can have the option to
+                        save the captured data in the database as BLOB image. Only the
+                        last 10 captured image will be shown.
+                    </p>
+                    <p className={styles.modal_paragraph}>
+                        Upon opening this project, a python script will run, and
+                        it will open your camera recorder. Press 'q' on keyboard to
+                        stop the script.
+                    </p>       
                 </div>
                 <div className={styles.modal_footer}>      
                     <button

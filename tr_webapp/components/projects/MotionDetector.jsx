@@ -24,7 +24,7 @@ const OurProjects = ()=> {
 
                     <div className={styles.md_section}>
                         <img src="/images/motion.gif" alt="motion.gif" />
-                        <Link href={'/projects'}>
+                        <Link href={'/showimgs'}>
                             <button className={styles.button}>
                                 Check this out!
                             </button>

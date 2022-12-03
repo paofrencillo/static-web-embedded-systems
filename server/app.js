@@ -2,7 +2,7 @@ const express = require("express");
 const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 const app = express();
-const { PythonShell } = require('python-shell')
+const { PythonShell, PythonShellError } = require('python-shell')
 const port = 4000;
 const db_table = "staticweb";
 
@@ -55,6 +55,15 @@ app.post('/capture', (req, res)=> {
 
 // Fetch data
 app.get('/show-images', (req, res)=> {
+  let pyshell = new PythonShell('../camera/app.py')
+  pyshell.kill()
+
+  PythonShell.run('../camera/app.py', null, function (err) {
+    if (err) {
+      throw err
+    }
+    console.log('Motion Detector Terminated');
+  });
   // Select the last entry from the db
   let array = [];
   connection.query(`SELECT * FROM ${db_table} ORDER BY id DESC LIMIT 10;`,
@@ -67,15 +76,10 @@ app.get('/show-images', (req, res)=> {
             // send a json response containg the image data (blob)
             res.json({'imgData': array});
       } else {
-        res.json({ message: "Something went wrong." });
+        res.json(null);
       }
       } catch {
           res.json({ message: err });
       }
   });
-
-  PythonShell.run('../camera/app.py', null, function (err) {
-    if (err) throw err;
-    console.log('Motion Detector Terminated');
-});
 });
