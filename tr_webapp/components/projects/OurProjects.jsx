@@ -4,7 +4,7 @@ const OurProjects = ()=> {
     return(
         <div className={styles.container}>
             <h1 className={styles.title}>
-                OUR PROJECTS
+                TEAM AT WORK
             </h1>
             <div className={styles.our_projects}>
                 <img className={styles.imgs} src="/images/cef.jpg" alt="img1" />
