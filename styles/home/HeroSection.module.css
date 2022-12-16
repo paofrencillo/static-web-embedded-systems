@@ -1,0 +1,26 @@
+.container {
+    min-height: 100vh;
+}
+
+.title {
+    font-family: Arial, sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ECB056;
+    -webkit-text-fill-color: white;
+    font-weight: 800;
+    font-size: 92px;
+    text-align: center;
+  }
+  
+.descriptions_wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+  
+.description {
+    width: 40%;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
